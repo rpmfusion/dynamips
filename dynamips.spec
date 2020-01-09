@@ -1,6 +1,6 @@
 Name:           dynamips
-Version:        0.2.18
-Release:        3%{?dist}
+Version:        0.2.21
+Release:        1%{?dist}
 Summary:        Cisco Router Emulator
 
 # There is a GPL license file in COPYING but most files
@@ -59,6 +59,9 @@ rm -rf %{buildroot}%{_docdir}/dynamips
 
 
 %changelog
+* Thu Jan 09 2020 Nicolas Chauvet <kwizart@gmail.com> - 0.2.21-1
+- Update dynamips
+
 * Sat Aug 10 2019 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 0.2.18-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
 
