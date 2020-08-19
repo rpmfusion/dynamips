@@ -38,7 +38,6 @@ functional routers
 
 
 %install
-cd build
 %cmake3_install
 
 # Don't install pre-installed docs
