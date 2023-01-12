@@ -1,8 +1,8 @@
 %undefine __cmake_in_source_build
 
 Name:           dynamips
-Version:        0.2.22
-Release:        2%{?dist}
+Version:        2.2.23
+Release:        1%{?dist}
 Summary:        Cisco Router Emulator
 
 # There is a GPL license file in COPYING but most files
@@ -57,6 +57,9 @@ rm -rf %{buildroot}%{_docdir}/dynamips
 
 
 %changelog
+* Thu Jan 12 2023 Nicolas Chauvet <kwizart@gmail.com> - 2.2.23-1
+- Update to 2.2.23
+
 * Mon Aug 08 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 0.2.22-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild and ffmpeg
   5.1
