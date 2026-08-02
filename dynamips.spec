@@ -1,5 +1,3 @@
-%undefine __cmake_in_source_build
-
 Name:           dynamips
 Version:        0.2.23
 Release:        8%{?dist}
@@ -11,7 +9,7 @@ License:        Proprietary
 URL:            https://github.com/GNS3/dynamips
 Source0:        %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:  cmake3
+BuildRequires:  cmake
 BuildRequires:  gcc
 BuildRequires:  elfutils-libelf-devel
 BuildRequires:  libpcap-devel
@@ -28,17 +26,17 @@ functional routers
 
 
 %build
-%{cmake3}
+%{cmake} -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 
 # Theses options don't build yet
 #  -DBUILD_UDP_SEND:BOOL=True \
 #  -DBUILD_UDP_RECV:BOOL=True \
 
-%cmake3_build
+%cmake_build
 
 
 %install
-%cmake3_install
+%cmake_install
 
 # Don't install pre-installed docs
 rm -rf %{buildroot}%{_docdir}/dynamips
