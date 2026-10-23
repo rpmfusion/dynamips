@@ -1,5 +1,5 @@
 Name:           dynamips
-Version:        0.2.24
+Version:        0.2.25
 Release:        1%{?dist}
 Summary:        Cisco Router Emulator
 
@@ -55,6 +55,9 @@ rm -rf %{buildroot}%{_docdir}/dynamips
 
 
 %changelog
+* Fri Oct 23 2026 Nicolas Chauvet <kwizart@gmail.com> - 0.2.25-1
+- Update to 0.2.25
+
 * Mon Aug 03 2026 Nicolas Chauvet <kwizart@gmail.com> - 0.2.24-1
 - Update to 0.2.24
 
